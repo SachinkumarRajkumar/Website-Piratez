@@ -1506,3 +1506,279 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ========== DETAIL PAGES STYLES ========== */
+.team-detail-section,
+.sponsor-detail-section,
+.achievement-detail-section,
+.innovation-detail-section {
+    padding: calc(var(--spacing-xl) + 80px) 0 var(--spacing-xl);
+    background: var(--black);
+    min-height: 100vh;
+}
+
+.team-detail-header,
+.sponsor-detail-header,
+.achievement-detail-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.team-avatar-large,
+.sponsor-logo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+    background: var(--gradient-flame);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    box-shadow: var(--glow-orange);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.team-detail-title,
+.sponsor-detail-title,
+.achievement-detail-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+    background: var(--gradient-flame);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.team-detail-position,
+.sponsor-detail-tagline {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--orange-primary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.team-detail-content,
+.sponsor-detail-content,
+.achievement-detail-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.detail-section {
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur-strength);
+    border: 2px solid var(--glass-border);
+    border-radius: 20px;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    transition: all var(--transition-normal);
+}
+
+.detail-section:hover {
+    border-color: var(--orange-primary);
+    box-shadow: var(--glow-orange);
+}
+
+.detail-section h2 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.detail-section p {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.detail-section p:last-child {
+    margin-bottom: 0;
+}
+
+.responsibilities-list,
+.achievements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibilities-list li,
+.achievements-list li {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.responsibilities-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--orange-primary);
+    font-size: 1.5rem;
+}
+
+.achievements-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--orange-primary);
+    border-radius: 50%;
+    top: 12px;
+    box-shadow: var(--glow-orange);
+}
+
+.responsibilities-list li strong {
+    color: var(--white);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.project-card {
+    background: var(--gray-dark);
+    border: 2px solid var(--gray-medium);
+    border-radius: 15px;
+    padding: var(--spacing-md);
+    transition: all var(--transition-normal);
+}
+
+.project-card:hover {
+    border-color: var(--orange-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+}
+
+.project-card h3 {
+    color: var(--orange-primary);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-card p {
+    color: var(--gray-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+/* Sponsor specific styles */
+.sponsor-tier-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--gradient-flame);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    box-shadow: var(--glow-orange);
+    margin-bottom: var(--spacing-md);
+}
+
+.sponsor-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.sponsor-stat-item {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: var(--gray-dark);
+    border-radius: 10px;
+    border: 2px solid var(--gray-medium);
+}
+
+.sponsor-stat-value {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--orange-primary);
+    margin-bottom: 0.5rem;
+}
+
+.sponsor-stat-label {
+    font-size: 0.9rem;
+    color: var(--gray-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Achievement specific styles */
+.achievement-date {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--orange-primary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.achievement-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.achievement-gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: var(--gray-dark);
+}
+
+.achievement-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.achievement-gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive for detail pages */
+@media (max-width: 768px) {
+
+    .team-avatar-large,
+    .sponsor-logo-large {
+        width: 150px;
+        height: 150px;
+        font-size: 4rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-section {
+        padding: var(--spacing-md);
+    }
+}
