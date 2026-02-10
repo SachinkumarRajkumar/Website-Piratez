@@ -210,6 +210,15 @@ h3 {
     transition: transform var(--transition-normal);
 }
 
+.team_crew_pic {
+    height: 225px;
+    width: 225px;
+    padding-top: 12;
+    transition: transform var(--transition-normal);
+}
+
+
+
 .logo:hover {
     transform: scale(1.05);
 }
@@ -1176,7 +1185,7 @@ h3 {
     opacity: 1;
 }
 
-.team-avatar {
+.crew-avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -1191,7 +1200,7 @@ h3 {
     box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
 }
 
-.team-name {
+.crew-name {
     font-size: 1.3rem;
     color: var(--white);
     margin-bottom: 0.5rem;
