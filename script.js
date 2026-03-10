@@ -1,4 +1,4 @@
-// TEAM PIRATEZ RACING - JAVASCRIPT
+// TEAM POLARIS RACING - JAVASCRIPT
 // Interactive features and animations
 
 // ========== MOBILE MENU TOGGLE ==========
@@ -335,14 +335,14 @@ if (timelineItems) {
 }
 
 // ========== CONSOLE MESSAGE ==========
-console.log('%c🏁 TEAM PIRATEZ RACING 🏁', 'color: #FF8C00; font-size: 24px; font-weight: bold; font-family: Orbitron;');
+console.log('%c🏁 TEAM POLARIS RACING 🏁', 'color: #FF8C00; font-size: 24px; font-weight: bold; font-family: Orbitron;');
 console.log('%cTPR 07 - Championship Edition', 'color: #FFD700; font-size: 16px; font-weight: bold;');
 console.log('%cEngineering Excellence Since 2020', 'color: #666; font-size: 14px;');
-console.log('%cWebsite by Team Piratez Web Division', 'color: #999; font-size: 12px;');
+console.log('%cWebsite by Team Polaris Web Division', 'color: #999; font-size: 12px;');
 
 // ========== INITIALIZATION ==========
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Team Piratez Racing website loaded successfully! 🚀');
+    console.log('Team Polaris Racing website loaded successfully! 🚀');
     createParticles();
 
     // Smooth fade in on load
